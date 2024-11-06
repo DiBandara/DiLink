@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Di Bandara Photography</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        /* Black and White Theme Styles */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Arial', sans-serif;
+            overflow: hidden; /* Hide scrollbars */
+            background-color: #000; /* Ensure the background is black */
+        }
+
+        .container {
+            max-width: 700px;
+            margin-top: 10px;
+            text-align: center;
+            padding: 30px;
+            border: px solid #9c9c9c;
+            border-radius: 20px;
+            background-color: #1c1b1b7c;
+            box-shadow: 0 15px 50px rgba(0, 0, 0, 0.751);
+        }
+        h1 {
+            font-size: 40px;
+            margin-bottom: 20px;
+            font-weight: bold;
+            color: #fff;
+        }
+        p {
+            font-size: 18px;
+            color: #ccccccbe;
+            margin-bottom: 30px;
+        }
+        /* Profile Image */
+        .profile-image {
+            border-radius: 50%;
+            width: 165px;
+            height: 165px;
+            margin-bottom: 20px;
+            object-fit: cover;
+            border: 5px solid #48ff00;
+            transition: transform 0.3s;
+        }
+        .profile-image:hover {
+            transform: scale(1.1);
+        }
+        /* Button Styling */
+        .btn-custom {
+            background-color: transparent;
+            color: #fff;
+            border: 2px solid #fff;
+            padding: 10px 30px;
+            font-size: 20px;
+            margin: 11px;
+            border-radius: 50px;
+            width: 280px;
+            transition: 0.4s;
+            display: inline-block;
+            text-align: center;
+            box-shadow: 0 4px 15px rgba(255, 255, 255, 0.2);
+        }
+        .btn-custom img {
+            width: 35px;
+            margin-right: 15px;
+        }
+        .btn-custom i {
+            margin-right: 15px;
+            font-size: 24px;
+        }
+        .btn-custom:hover {
+            background-color: #fff;
+            color: #000;
+            transform: translateY(-8px);
+            box-shadow: 0 12px 25px rgba(255, 255, 255, 0.5);
+        }
+        .btn-custom:focus {
+            outline: none;
+        }
+        /* Social Media Icons */
+        .social-icons a {
+            color: #ccc;
+            font-size: 32px;
+            margin: 0 18px;
+            transition: color 0.3s, transform 0.3s;
+        }
+        .social-icons a:hover {
+            color: #fff;
+            transform: scale(1.3);
+        }
+        .social-icons {
+            margin-top: 40px;
+        }
+        .social-icons a:focus {
+            outline: none;
+        }
+        /* Hover effects for buttons */
+        .btn-custom:hover {
+            box-shadow: 0 4px 15px rgba(255, 255, 255, 0.4);
+        }
+         /* Night Sky Background */
+         .night-sky {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: #000;
+            z-index: -1;
+        }
+
+        .star {
+            position: absolute;
+            background-color: #fff;
+            border-radius: 50%;
+            animation: twinkle 2s infinite ease-in-out;
+        }
+
+        /* Animation for twinkling effect */
+        @keyframes twinkle {
+            0% { opacity: 0.5; }
+            50% { opacity: 1; }
+            100% { opacity: 0.5; }
+        }
+    </style>
+</head>
+<body>
+    <!-- Night Sky Background -->
+    <div class="night-sky" id="night-sky"></div>
+
+    <!-- Main Container -->
+    <div class="container">
+        <!-- Profile Image -->
+        <img src="bandara photography.png" alt="Di Bandara Photography" class="profile-image">
+        
+        <!-- Business Name and Tagline -->
+        <h1>Di Bandara Photography</h1>
+        <p>Capturing Moments in Style</p>
+        
+        <!-- Link Buttons -->
+        <div class="mt-4">
+            <a href="https://wa.me/yourprofile" target="_blank" class="btn btn-custom">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp"> WhatsApp
+            </a>
+            <a href="https://facebook.com/yourprofile" target="_blank" class="btn btn-custom">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg" alt="Facebook"> Facebook
+            </a>
+            <a href="https://instagram.com/yourprofile" target="_blank" class="btn btn-custom">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Instagram_logo_2022.svg/1200px-Instagram_logo_2022.svg.png" alt="Instagram"> Instagram
+            </a>
+            <a href="https://www.tiktok.com/@yourprofile" target="_blank" class="btn btn-custom">
+                <i class="fab fa-tiktok"></i> TikTok
+            </a>
+            
+        </div>
+        
+        <!-- Social Media Icons -->
+        <div class="social-icons mt-4">
+            <a href="https://wa.me/yourprofile" target="_blank" class="fab fa-whatsapp"></a>
+            <a href="https://facebook.com/yourprofile" target="_blank" class="fab fa-facebook"></a>
+            <a href="https://instagram.com/yourprofile" target="_blank" class="fab fa-instagram"></a>
+            <a href="https://www.tiktok.com/@yourprofile" target="_blank" class="fab fa-tiktok"></a>
+            
+        </div>
+    </div>
+
+    <!-- Bootstrap JS (Optional) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // JavaScript to generate more stars dynamically in the night sky
+        const numberOfStars = 500; // Increased the number of stars
+        const nightSky = document.getElementById("night-sky");
+
+        for (let i = 0; i < numberOfStars; i++) {
+            const star = document.createElement("div");
+            star.classList.add("star");
+            // Randomize size and position
+            const size = Math.random() * 2 + 1; // Random size between 1px and 3px
+            const xPos = Math.random() * window.innerWidth; // Random horizontal position
+            const yPos = Math.random() * window.innerHeight; // Random vertical position
+            const duration = Math.random() * 2 + 1; // Random animation duration
+
+            star.style.width = `${size}px`;
+            star.style.height = `${size}px`;
+            star.style.left = `${xPos}px`;
+            star.style.top = `${yPos}px`;
+            star.style.animationDuration = `${duration}s`;
+            
+            nightSky.appendChild(star);
+        }
+    </script>
+</body>
+</html>
